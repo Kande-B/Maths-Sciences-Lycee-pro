@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Kande-B.github.io/Maths-Sciences-Lycée-pro/sitemap.xml
+Sitemap: https://Kande-B.github.io/Maths-Sciences-Lycee-pro/sitemap.xml
