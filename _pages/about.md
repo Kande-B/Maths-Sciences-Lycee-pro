@@ -1,34 +1,51 @@
 ---
 layout: about
-title: about
+title: À Propos de B. Kande
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Ressources Éducatives pour le Lycée Professionnel | Maths & Sciences
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: false
+  address: >
+    <p>Votre Numéro de Bureau 555</p>
+    <p>123, Votre Adresse</p>
+    <p>Votre Ville, Région 12345, France</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news: true
+latest_posts: true
+selected_papers: true
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+# B. Kande
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+**Ressources Éducatives pour le Lycée Professionnel | Maths & Sciences**
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Chers élèves, enseignants et passionnés d'éducation, bienvenue sur mon portfolio dédié aux ressources éducatives pour le lycée professionnel, incluant la 3ème Prépa-Métiers, CAP, et Bac Pro. Ce site est un espace collaboratif pour explorer, apprendre et contribuer à des projets en mathématiques, sciences physiques et compétences techniques.
+
+### Présentation du Site
+
+Ce site regroupe des dépôts GitHub transformés en ressources pédagogiques alignées sur les programmes officiels 2025 du Ministère de l'Éducation nationale. Vous y trouverez :
+- **Récapitulatifs** : Synthèses claires des concepts clés en mathématiques et sciences physiques.
+- **Simulations visuelles** : Outils interactifs pour visualiser des phénomènes scientifiques et mathématiques.
+- **Exercices pratiques** : Activités adaptées aux niveaux 3ème Prépa-Métiers, CAP, Seconde, Première et Terminale Bac Pro.
+
+Les ressources couvrent les programmes de mathématiques, sciences physiques et d'autres sujets généraux, conçues pour soutenir les élèves et les enseignants dans leurs apprentissages et enseignements.
+
+### À Propos de Moi
+
+Je suis B. Kande, enseignant passionné par l’éducation en mathématiques et sciences physiques au lycée professionnel. Avec des années d’expérience, je m’efforce de rendre les concepts complexes accessibles grâce à des approches pédagogiques innovantes. [Ajoutez des détails sur votre parcours, par exemple : diplôme en sciences de l’éducation, expérience dans l’enseignement professionnel, ou projets spécifiques.]
+
+### Ressources Officielles
+
+Consultez les [programmes 2025 du Ministère de l'Éducation](https://www.education.gouv.fr/) pour les détails sur les spécialités professionnelles. Ce site est conçu pour être en phase avec ces directives, offrant des ressources pertinentes et actualisées.
+
+### Contribuez et Connectez-vous
+
+Ce site est un espace collaboratif ! Vous pouvez contribuer en proposant des idées, des ressources ou des projets via [GitHub](https://github.com/Kande-B/Maths-Sciences-Lycee-pro). Contactez-moi pour des collaborations ou pour partager vos besoins pédagogiques. Suivez-moi sur [LinkedIn/Twitter] ou participez à des discussions sur des communautés éducatives comme [r/Teachers](https://www.reddit.com/r/Teachers/).
+
+[Ajoutez vos coordonnées spécifiques dans la section `address` ci-dessus.]
+
+Ce site est propulsé par [Jekyll](https://jekyllrb.com/) avec le thème [al-folio](https://github.com/alshedivat/al-folio), hébergé sur [GitHub Pages](https://pages.github.com/). Explorez, apprenez et contribuez à l’éducation au lycée professionnel !
