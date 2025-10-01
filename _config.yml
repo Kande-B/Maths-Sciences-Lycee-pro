@@ -1,49 +1,24 @@
-# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
-
-title: Lycée Pro Maths & Sciences # Concise title reflecting the site’s focus
+title: Lycée Pro Maths & Sciences
 first_name: B
-middle_name: 
 last_name: Kande
 contact_note: >
   Contactez-moi pour collaborer sur des ressources éducatives ou pour toute question sur les programmes de Maths et Sciences au lycée professionnel.
 description: >
   Bienvenue sur le portfolio éducatif de B. Kande, dédié aux ressources en mathématiques, sciences physiques et compétences techniques pour le lycée professionnel (3ème Prépa-Métiers, CAP, Bac Pro). Explorez des récapitulatifs, simulations visuelles et exercices pratiques alignés sur les programmes 2025.
-footer_text: >
-  Propulsé par <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> avec le thème <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
-  Hébergé sur <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: lycée professionnel, mathématiques, sciences physiques, 3ème prépa-métiers, CAP, Bac Pro, ressources éducatives, enseignement # Updated for SEO
-lang: fr # Set to French to match the document’s language
-icon: 📚 # Book emoji for education
-
+lang: fr
 url: https://kande-b.github.io
-baseurl: /Maths-Sciences-Lycee-pro # Matches the provided URL
+baseurl: /Maths-Sciences-Lycee-pro
+keywords: lycée professionnel, mathématiques, sciences physiques, 3ème prépa-métiers, CAP, Bac Pro, ressources éducatives, enseignement
+icon: 📚
 last_updated: true
-impressum_path: /impressum # For GDPR compliance
+impressum_path: /impressum
 back_to_top: true
-
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
-
 repo_theme_light: default
 repo_theme_dark: dark
 repo_trophies:
   enabled: true
   theme_light: flat
   theme_dark: gitdimmed
-
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-
-# Unchanged
-
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
-
 navbar_fixed: true
 footer_fixed: true
 search_enabled: true
@@ -51,28 +26,13 @@ socials_in_search: true
 posts_in_search: true
 bib_search: true
 max_width: 930px
-
-# -----------------------------------------------------------------------------
-# Open Graph & Schema.org
-# -----------------------------------------------------------------------------
-
 serve_og_meta: true
 serve_schema_org: true
-og_image: /assets/img/lycee_pro_banner.jpg # Add a relevant banner image
-
-# -----------------------------------------------------------------------------
-# Analytics and search engine verification
-# -----------------------------------------------------------------------------
-
-google_analytics: # Add your ID (e.g., G-XXXXXXXXXX)
-google_site_verification: # Add your ID
-bing_site_verification: # Add your ID
-
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-
-blog_name: Ressources Éducatives # Updated to reflect focus
+og_image: /assets/img/lycee_pro_banner.jpg
+google_analytics: # Ajoutez votre ID (ex. : G-XXXXXXXXXX)
+google_site_verification: # Ajoutez votre ID
+bing_site_verification: # Ajoutez votre ID
+blog_name: Ressources Éducatives
 blog_description: Ressources pédagogiques pour l’enseignement des mathématiques et sciences physiques au lycée professionnel
 permalink: /blog/:year/:title/
 lsi: false
@@ -83,9 +43,9 @@ related_blog_posts:
   max_related: 5
 giscus:
   repo: Kande-B/Maths-Sciences-Lycee-pro
-  repo_id: # Obtain from https://giscus.app/
+  repo_id: # À obtenir sur https://giscus.app/
   category: Comments
-  category_id: # Obtain from https://giscus.app/
+  category_id: # À obtenir sur https://giscus.app/
   mapping: title
   strict: 1
   reactions_enabled: 1
@@ -93,24 +53,10 @@ giscus:
   dark_theme: dark
   light_theme: light
   emit_metadata: 0
-  lang: fr # Set to French
-disqus_shortname: # Optional
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@kande-b/feed # Update if applicable
-
-# -----------------------------------------------------------------------------
-# Newsletter
-# -----------------------------------------------------------------------------
-
+  lang: fr
 newsletter:
   enabled: true
-  endpoint: # Add your endpoint (e.g., from loops.so)
-
-# -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
-
+  endpoint: # Ajoutez votre endpoint
 collections:
   books:
     output: true
@@ -120,13 +66,8 @@ collections:
     output: true
   projects:
     output: true
-  teaching_resources: # For lesson plans, exercises, and simulations
+  teaching_resources:
     output: true
-
-# -----------------------------------------------------------------------------
-# Jekyll settings
-# -----------------------------------------------------------------------------
-
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -139,11 +80,47 @@ kramdown:
       line_numbers: false
       start_line: 1
 include: ["_pages", "_scripts"]
-exclude: # Unchanged
+exclude:
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - lighthouse_results/
+  - package.json
+  - package-lock.json
+  - _pages/about_einstein.md
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - vendor
 keep_files:
   - CNAME
   - .nojekyll
-plugins: # Unchanged
+plugins:
+  - jekyll-archives-v2
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-tabs
+  - jekyll-terser
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
 defaults:
   - scope:
       path: "assets"
@@ -151,22 +128,12 @@ defaults:
       sitemap: false
 sass:
   style: compressed
-
-# -----------------------------------------------------------------------------
-# Jekyll Minifier & Terser
-# -----------------------------------------------------------------------------
-
 jekyll-minifier:
   compress_javascript: false
   exclude: ["robots.txt", "assets/js/search/*.js"]
 terser:
   compress:
     drop_console: true
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
-# -----------------------------------------------------------------------------
-
 jekyll-archives:
   posts:
     enabled: [year, tags, categories]
@@ -176,19 +143,13 @@ jekyll-archives:
       categories: "/blog/:type/:name/"
   books:
     enabled: [year, tags, categories]
-
-display_tags: ["mathématiques", "sciences physiques", "lycée professionnel", "exercices", "simulations", "enseignement"] # French tags
-display_categories: ["ressources pédagogiques", "tutoriels", "exercices", "simulations visuelles"] # French categories
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
-
+display_tags: ["mathématiques", "sciences physiques", "lycée professionnel", "exercices", "simulations", "enseignement"]
+display_categories: ["ressources pédagogiques", "tutoriels", "exercices", "simulations visuelles"]
 scholar:
   last_name: [Kande]
   first_name: [B.]
   style: apa
-  locale: fr # Set to French
+  locale: fr
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
@@ -205,45 +166,47 @@ scholar:
     dimensions: true
     google_scholar: true
     inspirehep: true
-  filtered_bibtex_keywords: # Unchanged
+  filtered_bibtex_keywords:
+    - abbr
+    - abstract
+    - additional_info
+    - altmetric
+    - annotation
+    - arxiv
+    - award
+    - award_name
+    - bibtex_show
+    - blog
+    - code
+    - google_scholar_id
+    - html
+    - inspirehep_id
+    - pdf
+    - poster
+    - preview
+    - selected
+    - slides
+    - supp
+    - video
+    - website
   max_author_limit: 3
   more_authors_animation_delay: 10
   enable_publication_thumbnails: true
-
-# -----------------------------------------------------------------------------
-# Optional Features
-# -----------------------------------------------------------------------------
-
 enable_google_analytics: true
-enable_cronitor_analytics: false
-enable_pirsch_analytics: false
-enable_openpanel_analytics: false
 enable_google_verification: true
 enable_bing_verification: true
 enable_masonry: true
-enable_math: true # Essential for Maths content
+enable_math: true
 enable_tooltips: true
 enable_darkmode: true
 enable_navbar_social: true
 enable_project_categories: true
 enable_medium_zoom: true
 enable_progressbar: true
-enable_video_embedding: true # For visual simulations
-
-# -----------------------------------------------------------------------------
-# Library versions
-# -----------------------------------------------------------------------------
-
-# Unchanged
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
+enable_video_embedding: true
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json
-
 jsonresume:
   - basics
   - work
